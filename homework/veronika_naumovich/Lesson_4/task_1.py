@@ -23,4 +23,3 @@ print(my_dict['dict'])
 my_dict['set'].add(60)
 my_dict['set'].pop()
 print(my_dict['set'])
-
