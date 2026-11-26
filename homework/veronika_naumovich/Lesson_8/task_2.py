@@ -1,3 +1,7 @@
+import sys
+sys.set_int_max_str_digits(0)
+
+
 def fib():
     a, b = 1, 1
     while True:
@@ -10,8 +14,7 @@ count = 0
 
 for n in fib():
     count += 1
-    if count == positions[0]:
+    if count in positions:
         print(f"{count}-е число Фибоначчи: {n}")
-        positions.pop(0)
-        if not positions:
+        if count >= max(positions):
             break
